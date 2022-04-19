@@ -300,29 +300,121 @@
 // console.log(jonas['calcAge'](1991));
 
 
-const markMiller = {
-    fullName: 'Mark Miller',
-    mass: 78,
-    height: 1.69,
-    calcBMI: function () {
-        return this.mass / this.height ** 2;
+// const markMiller = {
+//     fullName: 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         return this.mass / this.height ** 2;
 
-    }
-}
-console.log(markMiller.calcBMI());
+//     }
+// }
+// console.log(markMiller.calcBMI());
 
-const johnSmith = {
-    fullName: 'John Smith',
-    mass: 92,
-    height: 1.95,
-    calcBMI: function () {
-        return this.mass / (this.height * this.height);
-    }
-}
-console.log(johnSmith.calcBMI());
+// const johnSmith = {
+//     fullName: 'John Smith',
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         return this.mass / (this.height * this.height);
+//     }
+// }
+// console.log(johnSmith.calcBMI());
 
-const higherBMI = function () {
-    return `${markMiller.calcBMI() > johnSmith.calcBMI() ? markMiller.fullName : johnSmith.fullName}'s BMI (${markMiller.calcBMI() > johnSmith.calcBMI() ? markMiller.calcBMI() : johnSmith.calcBMI()}) is higher then ${markMiller.calcBMI() > johnSmith.calcBMI() ? johnSmith.fullName : markMiller.fullName}'s BMI (${markMiller.calcBMI() > johnSmith.calcBMI() ? johnSmith.calcBMI() : markMiller.calcBMI()})}`;
-}
+// const higherBMI = function () {
+//     return `${markMiller.calcBMI() > johnSmith.calcBMI() ? markMiller.fullName : johnSmith.fullName}'s BMI (${markMiller.calcBMI() > johnSmith.calcBMI() ? markMiller.calcBMI() : johnSmith.calcBMI()}) is higher then ${markMiller.calcBMI() > johnSmith.calcBMI() ? johnSmith.fullName : markMiller.fullName}'s BMI (${markMiller.calcBMI() > johnSmith.calcBMI() ? johnSmith.calcBMI() : markMiller.calcBMI()})}`;
+// }
 
-console.log(higherBMI());
+// console.log(higherBMI());
+
+// const markMiller = {
+//     fullName: 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         return this.mass / this.height ** 2;
+
+//     }
+// }
+// console.log(markMiller.calcBMI());
+
+// const johnSmith = {
+//     fullName: 'John Smith',
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         return this.mass / (this.height * this.height);
+//     }
+// }
+// console.log(johnSmith.calcBMI());
+
+
+// const writeParameters = function (fullName, mass, height) {
+//     return {
+//         fullName: fullName,
+//         mass: mass,
+//         height: height
+//     };
+// }
+
+// const johnSmith = writeParameters('John Smith', 92, 1.95);
+
+// console.log(johnSmith);
+
+// console.log('Lifting weights repetition 1 ⚔');
+
+// // for loop keeps running while condition is True
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep} ⚔`);
+// }
+
+
+// const jonas = [
+//     'Jonas',
+//     'Smith',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven'],
+//     true
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < jonas.length; i++) {
+//     // Reading from jonas array
+//     console.log(jonas[i], typeof jonas[i]);
+
+//     // Filling types array
+//     // types[i] = typeof jonas[i];
+//     types.push(typeof jonas[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// // continue and break
+
+// console.log('--- ONLY STRINGS ---');
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] !== 'string') continue;
+
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+
+
+// console.log('--- BREAK WITH NUMBER ---');
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] === 'number') break;
+
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+
+
+
