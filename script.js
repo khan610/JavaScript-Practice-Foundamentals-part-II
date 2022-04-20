@@ -474,11 +474,13 @@ const calcAverage = function (arr) {
     let sum = 0;
     for (let i = 0; i < totals.length; i++) {
         sum += totals[i];
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
     }
-    return sum / totals.length;
+    return sum / arr.length;
 }
 
-console.log(calcAverage(totals[0]));
+console.log(calcAverage(totals));
 
 //const calcTotal = function (bills, tips) {
 //    return tips + bills;
