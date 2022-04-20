@@ -435,3 +435,60 @@
 //         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
 //     }
 // }
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep} ⚔`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`WHILE: Lifting weights repetition ${rep} ⚔`);
+//     rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is about to end...');
+// }
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = function (bills) {
+    let tips;
+    tips = bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+    return tips;
+}
+
+for (let i = bills.length - 10; i < 10; i++) {
+    tips.push(calcTip(bills[i]));
+    totals.push(tips[i] + bills[i]);
+}
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < totals.length; i++) {
+        sum += totals[i];
+    }
+    return sum / totals.length;
+}
+
+console.log(calcAverage(totals[0]));
+
+//const calcTotal = function (bills, tips) {
+//    return tips + bills;
+//}
+
+// for (let i = bills.length - 10; i < 10; i++) {
+//     totals.push(calcTotal(bills[i], tips[i]));
+// }
+
+
+
+
+
