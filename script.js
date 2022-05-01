@@ -472,8 +472,6 @@ for (let i = bills.length - 10; i < 10; i++) {
 
 const calcAverage = function (arr) {
     let sum = 0;
-    for (let i = 0; i < totals.length; i++) {
-        sum += totals[i];
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
